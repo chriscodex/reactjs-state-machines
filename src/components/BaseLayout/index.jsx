@@ -3,7 +3,7 @@ import './styles.css'
 function BaseLayout() {
   return (
     <div>
-      <p>BaseLayout</p>
+      <p>Otra frase</p>
     </div>
   )
 }

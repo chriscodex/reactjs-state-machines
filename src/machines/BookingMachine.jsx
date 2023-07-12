@@ -1,6 +1,7 @@
 import { createMachine } from 'xstate';
 
-const bookingMachine = createMachine({
+const BookingMachine = createMachine({
+  predictableActionArguments: true,
   id: 'buy plane tickets',
   initial: 'initial',
   states: {
@@ -29,4 +30,4 @@ const bookingMachine = createMachine({
   },
 });
 
-export { bookingMachine };
+export { BookingMachine };
