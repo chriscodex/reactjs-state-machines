@@ -1,4 +1,4 @@
-import { BaseLayout } from './components/BaseLayout'
+import { BaseLayout } from './components/Container/BaseLayout'
 import './App.css'
 
 function App() {
