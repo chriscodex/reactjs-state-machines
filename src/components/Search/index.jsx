@@ -12,9 +12,8 @@ function Search({ state, send }) {
     setFlight(event.target.value);
   };
 
-
   const options = state.context.countries;
-  
+
   return (
     <div className='Search'>
       <p className='Search-title title'>Busca tu destino</p>
@@ -24,7 +23,7 @@ function Search({ state, send }) {
       </select>
       <button onClick={goToPassengers} disabled={flight === ''} className='Search-continue button'>Continuar</button>
     </div>
-  )
+  );
 }
 
 export { Search }

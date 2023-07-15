@@ -1,13 +1,17 @@
 import './styles.css'
 
-function Welcome() {
+function Welcome({ send }) {
+  const startBooking = () => {
+    send('START');
+  };
+
   return (
     <div className='Welcome'>
-      <p className='Welcome__title title'>¡Hoy es el día!</p>
-      <p className='Welcome-description description'>¡Bienvenido al espectáculo inolvidable de Coldplay! ¡Consigue tus entradas y únete a la fiesta musical!</p>
-      <button className='Welcome-cancel button'>Comenzar</button>
+      <p className='Welcome-title title'>¡Hoy es el día!</p>
+      <p className='Welcome-description description'>Compra tu vuelo y conoce un nuevo rincón del mundo, te va a sorprender las maravillas que hay para explorar</p>
+      <button onClick={startBooking} className='Welcome-cancel button'>Comenzar</button>
     </div>
-  )
+  );
 }
 
 export { Welcome }
