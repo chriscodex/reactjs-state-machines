@@ -7,11 +7,10 @@ import { StepsLayout } from '../StepsLayout';
 function BaseLayout() {
   const [state, send] = useMachine(BookingMachine);
 
-  console.log(state.matches('search'));
   return (
-    <div className="BaseLayout">
+    <div className='BaseLayout'>
       <Nav state={state} send={send} />
-      <StepsLayout state={state} send={send} />
+      <StepsLayout state={state} send={send}/>
     </div>
   );
 }
